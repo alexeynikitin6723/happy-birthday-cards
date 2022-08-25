@@ -1,3 +1,5 @@
+import './html2canvas.min.js';
+
 const buttonMen = document.querySelector('.header__button-gender_men');
 const buttonWomen = document.querySelector('.header__button-gender_women');
 const body = document.body;
