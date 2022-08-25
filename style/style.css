@@ -184,6 +184,9 @@ button{
 	line-height: 25px;
 	font-weight: 700;
 }
+.card__link a{
+	padding:20px 60px;
+}
 .men .card__link{
 	background-color: #1178B2;
 }
@@ -254,6 +257,12 @@ button{
 		width: 40px;
 		height: 40px;
 		background-size: 30px;
+	}
+	.card__link{
+		width: 220px;
+		height: 45px;
+		font-size: 14px;
+		white-space: nowrap;
 	}
 }
 

@@ -16,13 +16,16 @@ const state = {
 
 const saveCard = async () => {
 	html2canvas(cardWrapper).then(canvas => {
-		cardLink.textContent = 'Скачать карточку';
+		const a = document.createElement('a');
+		cardLink.innerHTML = '';
+		a.textContent = 'Скачать карточку';
 		canvas.style.maxWidth = "100%";
 		canvas.style.height = "auto";
 		canvas.style.display = "none";
-		cardLink.append(canvas);
-		cardLink.setAttribute('href', canvas.toDataURL('image/png'));
-		cardLink.setAttribute('download', 'happy-birthday.png');
+		a.append(canvas);
+		a.setAttribute('href', canvas.toDataURL('image/png'));
+		a.setAttribute('download', 'happy-birthday.png');
+		cardLink.append(a);
 	})
 }
 
