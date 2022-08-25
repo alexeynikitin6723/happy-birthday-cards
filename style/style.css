@@ -96,6 +96,7 @@ button{
 	font-size: 18px;
 	line-height: 25px;
 	color: #FFFFFF;
+	margin-right: 30px;
 }
 .men .header__button-change{
 	background-color: #1178B2;;
@@ -148,6 +149,8 @@ button{
 }
 .card__container {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .card__wrapper {
 	position: relative;
@@ -166,7 +169,28 @@ button{
 	font-size: max(3em,min(calc(100vw * 3 / 140), 6em));
 	line-height: 1.6;
 }
+.card__link{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 65px;
+	margin-top: 32px;
+	padding: 5px;
+	cursor: pointer;
+	color:#fff;
+	border-radius: 30px;
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 700;
+}
+.men .card__link{
+	background-color: #1178B2;
+}
 
+.women .card__link{
+	background-color: #C300C7;
+}
 .women .card__text{
 	font-family: 'Bad Script';
 }
